@@ -1,0 +1,71 @@
+1. *Various Transmission Media:*
+   Transmission media are the physical pathways that connect devices in a network. They can be classified into guided and unguided media.
+   - Guided Media: Includes twisted pair cables, coaxial cables, and fiber optic cables. Twisted pair cables are commonly used in Ethernet networks due to their cost-effectiveness and flexibility. Coaxial cables offer higher bandwidth and are used in cable television and broadband internet connections. Fiber optic cables transmit data using light signals, providing high bandwidth and immunity to electromagnetic interference.
+   - Unguided Media: Includes wireless transmission technologies like radio waves, microwaves, and infrared. Radio waves are used in Wi-Fi networks, while microwaves are employed in point-to-point communication links. Infrared is used for short-range communication like remote controls.
+
+2. *Utility of a Network Interface Card (NIC):*
+   A Network Interface Card, also known as a network adapter or Ethernet card, is essential for connecting a computer to a network. Its primary functions include:
+   - Connecting the computer to the network medium, such as Ethernet cables or wireless signals.
+   - Transmitting and receiving data packets between the computer and the network.
+   - Converting digital data produced by the computer into a format suitable for transmission over the network and vice versa.
+   - Implementing protocols necessary for communication, such as TCP/IP.
+
+3. *Difference between Logical Address and Physical Address:*
+   - *Logical Address:* Also known as a network address, it is assigned by the network protocol (e.g., IP address in TCP/IP networks). It identifies a device within a network and is used for routing packets between networks. Logical addresses are hierarchical and can be dynamic (assigned by DHCP) or static (manually configured).
+   - *Physical Address:* Also known as a MAC (Media Access Control) address, it is hard-coded into the network interface card by the manufacturer. It uniquely identifies the NIC on a network and is used for communication within the local network segment. Physical addresses are assigned at the factory and are permanent.
+
+4. *Comparison of Various Network Topologies:*
+   - *Star Topology:* All nodes are connected to a central hub or switch. It offers easy troubleshooting and scalability but relies heavily on the central hub.
+   - *Bus Topology:* All nodes are connected to a single backbone cable. It is simple and inexpensive but prone to network failures if the backbone cable is damaged.
+   - *Ring Topology:* Each node is connected to exactly two other nodes, forming a circular structure. It provides equal access to all nodes but can be problematic if one node fails, disrupting the entire network.
+   - *Mesh Topology:* Every node is connected to every other node, forming a fully interconnected network. It offers redundancy and fault tolerance but is costly and complex to implement.
+
+5. *Short Note on Telnet:*
+   Telnet is a network protocol used to establish a remote connection to a device over a TCP/IP network, typically the internet. It allows users to access the command-line interface of a remote computer or networking device. Telnet operates on port 23 and is primarily used for troubleshooting, remote administration, and accessing text-based services on remote hosts. However, Telnet is considered insecure because it transmits data, including passwords, in plaintext, making it susceptible to eavesdropping and interception.
+
+6. *Discussion about Firewalls:*
+   Firewalls are network security devices that monitor and control incoming and outgoing network traffic based on predetermined security rules. They act as a barrier between trusted internal networks and untrusted external networks (like the internet) to prevent unauthorized access and protect against cyber threats. Firewalls can be hardware-based, software-based, or a combination of both. They inspect network packets and either allow or block them based on predefined rules, such as IP addresses, port numbers, and protocols.
+
+7. *Steps to Configure File Transfer Protocol (FTP):*
+   - Install an FTP server software on the host computer.
+   - Configure the FTP server settings, including user authentication, permissions, and directories.
+   - Open the required ports (usually port 21 for FTP control connection and port 20 for FTP data connection) on the host computer's firewall.
+   - Create user accounts and assign appropriate permissions for accessing FTP services.
+   - Start the FTP server service.
+   - Connect to the FTP server using an FTP client software.
+   - Authenticate with valid credentials (username and password) to access files and directories on the FTP server.
+   - Transfer files by uploading or downloading them between the local and remote systems.
+
+8. *Short Note on DNS:*
+   DNS (Domain Name System) is a hierarchical decentralized naming system for computers, services, or other resources connected to the internet or a private network. It translates human-readable domain names (e.g., www.example.com) into IP addresses (e.g., 192.0.2.1) used by networking equipment to route traffic. DNS servers maintain distributed databases containing domain name records (DNS records) that map domain names to IP addresses and vice versa. DNS plays a crucial role in internet communication by facilitating the resolution of domain names to IP addresses, making it easier for users to access websites and services.
+
+9. *Comparison between Hub, Switch, and Router:*
+   - *Hub:* Operates at the physical layer of the OSI model. It is a simple networking device that connects multiple Ethernet devices, repeating incoming electrical signals to all ports. Hubs are inefficient as they forward packets to all connected devices, leading to network congestion and collisions.
+   - *Switch:* Operates at the data link layer of the OSI model. It forwards data frames only to the intended recipient device based on the MAC address, improving network efficiency and reducing collisions. Switches create separate collision domains for each port, enhancing network performance.
+   - *Router:* Operates at the network layer of the OSI model. It is responsible for routing data packets between different networks by examining the IP addresses in the packet headers. Routers use routing tables to determine the best path for forwarding packets, allowing them to connect multiple networks and enable communication between them.
+
+10. *Various Types of Cable Used in Computer Networks:*
+    - *Twisted Pair Cable:* Consists of pairs of insulated copper wires twisted together. It is commonly used for Ethernet networks due to its flexibility and cost-effectiveness.
+    - *Coaxial Cable:* Consists of a central conductor surrounded by insulation, a metallic shield, and an outer insulating layer. It is used in cable television and broadband internet connections.
+    - *Fiber Optic Cable:* Transmits data using light signals through a glass or plastic fiber. It offers high bandwidth, immunity to electromagnetic interference, and long-distance transmission capabilities.
+
+11. *Discussion about Client-Server Communication Paradigm:*
+    In the client-server communication paradigm, computing tasks are divided between clients and servers. Clients are typically end-user devices, such as computers, smartphones, or tablets, that request services or resources from servers. Servers are powerful computers or specialized hardware/software systems that provide services to clients upon request. Communication between clients and servers occurs through a network, with clients sending requests to servers and servers responding with the requested data or services. This paradigm allows for centralized management, scalability, and efficient resource utilization in distributed computing environments.
+
+12. *Differentiation between Unicast, Broadcast, and Multicast Message Deliveries:*
+    
+
+1. *Unicast:*
+   - *Definition:* Unicast refers to a one-to-one communication method where a message is sent from one sender to one specific recipient.
+   - *Usage:* It is commonly used in most network communication scenarios, such as when a computer requests a web page from a server or when sending emails between two individual addresses.
+   - *Example:* When you send a message to a friend via instant messaging, the message is typically delivered using unicast communication.
+
+2. *Broadcast:*
+   - *Definition:* Broadcast refers to a one-to-all communication method where a message is sent from one sender to all devices on the network.
+   - *Usage:* Broadcast messages are used for tasks like network discovery, distributing updates to all devices simultaneously, or sending alerts to all devices within a network.
+   - *Example:* When a device joins a network and needs to discover other devices, it may send a broadcast message asking for responses from all devices on the network.
+
+3. *Multicast:*
+   - *Definition:* Multicast refers to a one-to-many communication method where a message is sent from one sender to a specific group of recipients.
+   - *Usage:* Multicast messages are efficiently delivered to multiple recipients simultaneously, reducing network bandwidth usage compared to individual unicast transmissions. It is commonly used for tasks like streaming multimedia content or distributing data to specific interest groups within a network.
+   - *Example:* When streaming a live video feed to multiple users simultaneously, multicast communication can be used to send the video stream to all users who have subscribed to it, reducing network congestion and improving efficiency.
